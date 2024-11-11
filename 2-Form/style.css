@@ -1,0 +1,29 @@
+body{
+    background-color: #F39494;
+}
+
+form{
+    background-color: white;
+}
+
+h1{
+    font-size: 36px;
+}
+
+p{
+    font-size: 18px;
+}
+
+button{
+    background-color: #089FE0;
+    color: white;
+    font-size: 18px;
+}
+
+.checkbox{
+    font-size: 14px;
+}
+
+a{
+    color: #089FE0;
+}
