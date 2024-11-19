@@ -8,6 +8,7 @@
 </head>
 <body>
 
+<main>
     <form action="#" method="get">
 
         <div>
@@ -16,27 +17,30 @@
             <p>Уже есть аккаунт? <a href="#">Войти</a></p>
             
         </div>
-        
+
+    <div class="input">
         <div>
-           <input type="text">
+           <input type="text" class="search">
         </div>
 
-        <div>
-            <input type="text" id="name" placeholder="Имя">
+        <div >
+            <input type="text" class="name" id="name" placeholder="Имя">
     
-            <input type="text" id="surname" placeholder="Фамилия">
+            <input type="text" class="surname" id="surname" placeholder="Фамилия">
         </div>
 
         <div>
-            <input type="email" id="email" placeholder="E-mail">
+            <input type="email" class="email" id="email" placeholder="E-mail">
         </div>
 
             <button type="submit">Зарегистрироваться</button>
 
         <div>
-            <input type="checkbox"> Я прочитал и принимаю <a href="#">Условия использования</a>
+            <input type="checkbox"> <span>Я прочитал и принимаю </span> <a href="#">Условия использования</a>
         </div>
-
+    </div>
         </form>
+
+</main>
 </body>
 </html>
