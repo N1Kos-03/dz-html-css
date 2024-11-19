@@ -3,16 +3,22 @@ body{
 
 }
 
+header {
+  margin-top: 81px;
+}
+
+main{
+    margin-top: 80px;}
+
 .logo a {
     color: #FFF;
     text-decoration: none;
+    
 }
 
 .navigation a {
     color: #FFF;
     text-decoration: none;
-    
-
 }
 
 .navigation li {
@@ -22,6 +28,10 @@ body{
 .search {
     background: #1F293799;
     border: none;
+    width: 224px;
+    height: 20px;
+    border-radius: 100px ;
+   padding: 10px;
 }
 
 .date {
@@ -37,6 +47,12 @@ main h1 {
     font-weight: 400;
     line-height: 38px;
     color: #FFFFFF;
+    width: 525px;
+    margin-bottom: 30px;
+}
+
+.author-block {
+    margin-bottom: 28px;
 }
 
 .author  {
@@ -46,22 +62,38 @@ main h1 {
     color: #FFFFFF;
 }
 
+.author p  {
+  font-size: 16px;
+}
+
+
 .opacity {
     opacity: .5;
+    font-size: 14px;
+    margin-top: -15px;
+}
+
+.mac {
+    margin-bottom: 69px;
 }
 
 .text {
     font-weight: 400;
     line-height: 30px;
     color: #FFFFFF;
+    width: 708px;
+   
 }
 
 .text1 {    
     font-size: 20px;
+    margin-bottom: 40px;
+   
 }
 
 .text2 {    
     font-size: 16px;
+    margin-bottom: 40px;
 }
 
 footer {
@@ -70,4 +102,6 @@ footer {
     line-height: 28px;
     opacity: .5;
     color: #FFFFFF;
+    margin-top: 103px;
+    margin-bottom: 77px;
 }
