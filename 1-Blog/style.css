@@ -1,19 +1,41 @@
 body{
     background: linear-gradient(180deg, #374151 0%, #111827 100%);
+    font-family: 'Roboto', sans-serif;
 
 }
 
 header {
-  margin-top: 81px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-main{
-    margin-top: 80px;}
+.hero {
+    display: flex;
+    margin-top: 81px;
+    justify-content: space-between;
+    align-items: center;
+   
+}
 
-.logo a {
+.hero a {
     color: #FFF;
     text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
     
+}
+
+.navigation ul {
+    margin-right: 250px;
+    display: flex;
+    gap: 32px;
+    font-size: 16px;
 }
 
 .navigation a {
@@ -25,13 +47,42 @@ main{
     list-style-type: none;
 }    
 
-.search {
+.search{
     background: #1F293799;
     border: none;
-    width: 224px;
-    height: 20px;
-    border-radius: 100px ;
-   padding: 10px;
+    width: 150px;
+    height: 40px;
+    border-radius: 100px;
+    padding: 0 40px ;
+    color: #FFF;
+   position: relative;
+}
+
+.search::placeholder {
+    font-size: 16px;
+    
+}
+
+.search:focus {
+    outline: none;
+}
+
+
+.search-icon {
+    position: absolute;
+    top: 90px;
+    margin-left: -230px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .date {
@@ -40,6 +91,21 @@ main{
     line-height: 16.41px;
     opacity: .5;
     color: #FFFFFF;
+    margin-top: 80px;
+    text-align: center;
+}
+
+span {  
+    position: relative;
+    margin: 15px;
+}
+
+
+span::after {
+    content: url(./images/circle.svg);
+    position: absolute;
+    top:-3px;
+    right: -12px;
 }
 
 main h1 {
@@ -49,10 +115,19 @@ main h1 {
     color: #FFFFFF;
     width: 525px;
     margin-bottom: 30px;
+    text-align: center;
+    
 }
 
 .author-block {
-    margin-bottom: 28px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.author-block img {
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 .author  {
@@ -94,6 +169,7 @@ main h1 {
 .text2 {    
     font-size: 16px;
     margin-bottom: 40px;
+    width: 690px;
 }
 
 footer {
@@ -104,4 +180,5 @@ footer {
     color: #FFFFFF;
     margin-top: 103px;
     margin-bottom: 77px;
+    text-align: center;
 }
