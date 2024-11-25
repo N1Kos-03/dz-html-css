@@ -1,120 +1,132 @@
-body{
-    background-color: #F39494;
+* {
+    box-sizing: border-box;
+}
+html {
+    background: linear-gradient(225deg, #fdc5c5 25.45%, rgba(242, 152, 222, 0) 100%),
+        linear-gradient(225deg, #ffa5a5 33.09%, rgba(255, 255, 255, 0) 82.34%), #f39494;
+    height: 100%;
+}
+body {
+    margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    
+main {
+    max-width: 1440px;
+    margin: 0 auto;
 }
-
-form{
-    margin-top: 150px;
-    background-color: white;
-    width: 582px;
-    height: 573px;
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 582px;
     border-radius: 10px;
+    padding: 72px 94px 91px;
+    background-color: #fffefe;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    /* flex */
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    
+    gap: 22px 1px;
 }
 
-h1{
+h1 {
+    color: #333;
     font-size: 36px;
-    margin-top: 72px;
+    line-height: 54px;
+    margin: 0;
 }
-
-p{
+p {
+    color: #666;
     font-size: 18px;
-    color: #666666;
-    margin-top: -15px;
+    margin: 0;
+    margin-left: 10px;
 }
-
-input:focus {
-    outline: none;
+a {
+    color: #089fe0;
+    font-size: 14px;
+    text-decoration: none;
 }
-
-.search{
-    width: 394px;
-    height: 44px;
+label {
+    color: #666;
+    font-size: 14px;
+}
+span {
+    font-size: 14px;
+}
+input:not([type="checkbox"]) {
+    color: #999;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    font-style: italic;
+    border: 0;
     border-radius: 5px;
-    border: 1px solid #F5F5F5;
-    padding-left: 10px;
-}
-
-.input{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 22px;
-  margin-top: 47px;
-}
-
-.name{
-    width: 190px;
-    height: 44px;
-    border-radius: 5px 0 0 5px;
-    border: 1px solid #ffffff;
-    background-color: #F5F5F5;
-    padding: 0px 0px 0px 10px;
-    margin: -2px;
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-}
-
-.surname{
-    width: 190px;
-    height: 42px;
-    border-radius: 0 5px 5px 0;
-    border: 1px solid #F5F5F5;
-    background-color: #F5F5F5;
-    padding: 0px 0px 0px 10px;
-    margin: -2px;
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-}
-
-.email{
-    width: 394px;
-    height: 44px;
-    border-radius: 5px;
-    border: 1px solid #F5F5F5;
-    background-color: #F5F5F5;
-    padding: 0px 0px 0px 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
+    width: 100%;
+    line-height: 26px;
+    border: 1px solid #f5f5f5;
+    padding: 9px 35px 9px 11px;
+    caret-color: #089FE0;
 }
 
 
 button{
-    width: 405px;
-    height: 44px;
-    background-color: #089FE0;
-    color: white;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
+        padding: 9px 12px;
+        width: 100%;
+        background-color: #089FE0;
+        color: white;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    button::after{
+        content: url(./images/arrow.svg);
+        margin-left: 75px;
+        position: absolute;
+    }
+
+
+input:not([type="checkbox"]):focus {
+    background-color: #fff;
+    color: #333;
+    font-style: normal;
+    font-weight: 600;
+}
+.policy {
+  
     position: relative;
-    cursor: pointer;
+}
+.policy input {
+    width: auto;
+}
+.field {
+    display: flex;
+    gap: 1px;
 }
 
-button::after{
-    content: url(./images/Arrow1.svg);
-    margin-left: 75px;
-    position: absolute;
+.field input:first-child {
+    border-radius: 5px 0 0 5px;
+
 }
 
-span{
-    color: #666666; 
-    font-size: 14px;
+.field input:last-child {
+    border-radius: 0 5px 5px 0;
+    
 }
 
-a{
-    color: #089FE0;
-    text-decoration: none;
+.title {
+    margin-bottom: 25px;
 }
+.title a {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+
+
