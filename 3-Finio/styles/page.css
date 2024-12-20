@@ -577,6 +577,10 @@
       
     }
 
+    .mob__vers {
+        margin-top: -100px;
+    }
+
     .support__wrapper {
         flex-direction: column-reverse;
     }
