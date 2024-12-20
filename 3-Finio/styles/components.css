@@ -1,0 +1,205 @@
+.hero__h1{
+    color: var(--color-text-white);
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 120%;
+    width: 515px;
+    margin-bottom: 40px;
+}
+
+.sub{
+    width: 360px;
+    line-height: 120%;
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--color-blue);
+    cursor: pointer;
+    background-color: var(--color-text-white);
+    padding: 12px 23px 12px 23px;
+    border-radius: var(--border-32);
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.line__hr{
+    width: 80vw;
+    height: 1px;
+    margin: 0 auto;
+    border: 1px solid #4E5D7C14;
+    margin-top: 80px;
+   
+}
+
+.line__profit{
+    width: 80vw;
+    height: 1px;
+    margin: 0 auto;
+    border: 1px solid #4E5D7C14;
+    margin-top:80px;
+    margin-bottom: 80px;
+}
+
+
+.rate__p{
+    font-size: 17px;
+    color: #4E5D7C80;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+
+.card__p{
+    font-size: 17px;
+    font-weight: 500;
+    color: #4E5D7C80;
+}
+
+.card__p3{
+    font-size: 17px;
+    font-weight: 500;
+    color: #4E5D7C80;
+    margin-bottom: -18px;
+}
+
+.tag {
+    background-color: #1ABC9C;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    margin-bottom: 16px;
+}
+
+.tag span{
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 21px;
+}
+
+.card:hover{
+    background-color: #357EFE;
+    color: #FFFFFF;
+    cursor: pointer;
+    
+}
+
+.card:hover .card__p {
+    color: #FFFFFF99;
+    
+}
+
+.card:hover .card__p3 {
+    color: #FFFFFF99;
+    
+}
+
+.card:hover .price__item{
+    color: #FFFFFF;
+}
+
+
+.card:hover .btn{
+    background-color: #FFFFFF;
+    color: #357EFE;
+}
+
+.active {
+    background-color: #FFC736;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.btn {
+    width: 289px;
+    height: 48px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 47px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 24px;
+    margin: 0 auto;
+    margin-left: -10px;
+}
+
+@media (max-width:1115px){
+    .cards{
+        justify-content: center;
+    }
+
+    .line__hr{
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width:770px){
+  
+    .hero__h1{
+        font-size: 32px;
+    }
+
+    .rate__h2{
+        font-size: 36px;
+        padding: 24px;
+        margin-bottom: -24px;
+    }
+    
+    .cards{
+        justify-content: center;
+    }
+
+
+}
+
+@media (max-width:680px){
+
+    .rate__h2{
+        font-size: 36px;
+        text-align: center; 
+    }
+    
+    .rate__p{
+        font-size: 17px;
+    
+    }
+}
+
+
+@media (max-width:570px){
+
+    .hero__h1{
+        width: 390px;
+    }
+}
+
+
+@media (max-width:480px){
+
+    .hero__h1{
+        width: 390px;
+    }
+
+    .rate__h2{
+        font-size: 36px;
+        margin-bottom: -24px;
+        text-align: start;
+        margin-left: 38px;
+    }
+    
+    .rate__p{
+        font-size: 17px;
+        text-align: start;
+        margin-left: 60px;
+    }
+
+    .line__hr{
+        width: 70vw;
+    }
+}

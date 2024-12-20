@@ -1,0 +1,28 @@
+:root{
+    --color-text-white: #FFFFFF;
+    --color-text-black: #000000;
+    --color-blue: #357EFE;
+    --color-paragraph: #4E5D7C80;
+     
+    --border-32: 32px;
+
+    --layout-width: 1500px; 
+    
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    font-style: normal;
+    background-color: #FFFFFF;
+    
+}
+
+a{
+    text-decoration: none;
+}
