@@ -7,9 +7,9 @@ import indexstyles from '../../index.module.css';
 function Search({ onSearch }) {
   const [inputData, setInputData] = useState('');
 
-  const inputChange = (event) => {
-    setInputData(event.target.value);
-  };
+const inputChange = (event) => {
+  setInputData(event.target.value);
+};
 
   const handleSearch = () => {
     if (onSearch) onSearch(inputData);
