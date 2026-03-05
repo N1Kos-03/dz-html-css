@@ -1,2 +1,30 @@
-﻿JS/JS pro/15-build/node_modules
-TS/4-dummy-api/node_modules
+﻿# dependencies
+node_modules
+
+# next.js
+.next
+out
+
+# build
+dist
+build
+
+# logs
+*.log
+
+# env
+.env
+.env.local
+.env.development.local
+.env.production.local
+
+# system
+.DS_Store
+Thumbs.db
+
+# typescript
+*.tsbuildinfo
+
+# IDE
+.vscode
+.idea
